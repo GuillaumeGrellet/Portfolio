@@ -27,6 +27,7 @@ h2 {
 	color: #eca603;
 }
 
+
 a {
 	font-weight:bold;
 	color:#fff;
@@ -52,19 +53,26 @@ outline:0;
 }
 .competence
 {
-	margin-left: 6%;
+	margin-left: 12%;
 	float: left;
 }
 .logiciel{
-margin-left: 70%;
+margin-left: 65%;
 
+}
+.li{
+	margin-left: 8%;
 }
 
 .li1{
 
 	float: right;
-	margin-right: 14%;
+	margin-right: 8%;
+	font-size: 20px;
+	margin-top: 0px;
 }
+
+
 
 
 /* Nav */
@@ -95,6 +103,7 @@ margin-left: 70%;
 	-o-transition: all 1s;
 	transition: all 1s;
 }
+
 
 
 /* slides */
@@ -153,6 +162,7 @@ margin-left: 70%;
 	position: relative;
 	background-color: rgba(0, 0, 0, .6);
 	padding: 50px;
+
 }
 
 #slide1 .slide_inside {
@@ -178,13 +188,15 @@ margin-left: 70%;
 width: 30%;
 height: 60%;
 margin-top: 15%;
+
+
 }
 
 #clone{
 width: 22%;
 height: 60%;
-margin-top: 18%;
-margin-left: 5%;
+margin-top: 20%;
+margin-left: 4%;
 }
 
 
@@ -311,41 +323,92 @@ margin-left: 5%;
 	opacity:0; 
 	transition: opacity 2s;
 }
-.boutton1:after  { 
+.boutton1:before  { 
 	content: "Compétences";
 	position:relative; 
 	top: 120px; 
-	left:-10px;
+	left:-12px;
 	font-size: 1.25em; 
 	font-family: helvetica, arial, sans-serif; 
 	color:#888;
-	opacity:0; 
+	opacity:1; 
 	transition: opacity 2s;
 }
-.boutton2:after  { 
+.boutton2:after { 
+	content: "Stages";
+	position:relative; 
+	top: 35px; 
+	left: -45px; 
+	font-size: 1.25em; 
+	font-family: helvetica, arial, sans-serif; 
+	color:black;
+	opacity:0; 
+	transition: opacity 2s;
+
+}
+.boutton2:before { 
 	content: "Stages";
 	position:relative; 
 	top: 120px; 
+	left: 12px;
 	font-size: 1.25em; 
 	font-family: helvetica, arial, sans-serif; 
-	color:#888;
-	opacity:0; 
+	color:white;
+	opacity:1; 
 	transition: opacity 2s;
+
 }
 .boutton3:after  { 
-	content: "Curriculum Vitae";
+	content: "Stages";
 	position:relative; 
 	top: 120px; 
+	left: -45px;
 	font-size: 1.25em; 
 	font-family: helvetica, arial, sans-serif; 
-	color:#888;
+	color:white;
 	opacity:0; 
 	transition: opacity 2s;
 }
-.boutton:hover:after, .boutton1:hover:after, .boutton2:hover:after, .boutton3:hover:after {
+.boutton3:before  { 
+	content: "Stages";
+	position:relative; 
+	top: 30px; 
+	left: 12px;
+	font-size: 1.25em; 
+	font-family: helvetica, arial, sans-serif; 
+	color:black;
+	opacity:1; 
+	transition: opacity 2s;
+}
+.boutton:hover:after{
 	opacity: 1;
 	transition: opacity 1s 1s;
 }
+
+ .boutton1:hover:before{
+ 	opacity: 0;
+	transition: opacity 0.8s 0.8s;
+ }
+
+ .boutton2:hover:after{
+ 	opacity: 1;
+	transition: opacity 0.8s 0.8s;
+ }
+
+  .boutton2:hover:before{
+ 	opacity: 0;
+	transition: opacity 0.8s 0.8s;
+ }
+
+.boutton3:hover:after{
+	opacity: 1;
+	transition: opacity 1s 1s;
+} 
+
+.boutton3:hover:before{
+	opacity: 0;
+	transition: opacity 1s 1s;
+} 
 
 
 
