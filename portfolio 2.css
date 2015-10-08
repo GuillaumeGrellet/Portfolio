@@ -6,14 +6,15 @@
 
 
 /* General */
-body {
+  body {
 	margin: 0;
 	padding: 0;
 	color:#fff;
 	font: normal 90% "Trebuchet MS",Verdana,"Lucida Grande",Tahoma,Arial,Helvetica,Sans-Serif;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 	overflow: hidden;
-	background: #000;
+	width: 100%;
+	height: 100%;
 
 
 }
@@ -130,8 +131,12 @@ margin-left: 65%;
 }
 
 
-#slide1 { background:url(images/window.jpeg) center 0 no-repeat fixed; background-size: cover; }
-#slide2 { background: url(images/fondbleu.jpeg) center 0 no-repeat fixed; background-size: cover; }
+#slide1 { 
+	background:url(images/window.jpeg) center 0 no-repeat fixed; background-size: cover; 
+}
+#slide2 { 
+	background: url(images/fondbleu.jpeg) center 0 no-repeat fixed; background-size: cover; 
+}
 #slide3 { background: url(images/mac.png) center 0 no-repeat fixed; background-size: cover; }
 #slide4 { background: url(images/fond1.jpeg) center 0 no-repeat fixed; background-size: cover; }
 
@@ -313,102 +318,52 @@ margin-left: 4%;
 
 
 /* sorry, i need to play */
-.boutton:after  { 
+.boutton:before  { 
 	content: "A propos de moi";
 	position:relative; 
-	top: 120px; 
+	top: 25%; 
 	font-size: 1.25em; 
 	font-family: helvetica, arial, sans-serif; 
-	color:#888;
-	opacity:0; 
+	color:black;
+	opacity:1; 
 	transition: opacity 2s;
 }
+
 .boutton1:before  { 
 	content: "Compétences";
+	word-wrap: break-word;
 	position:relative; 
-	top: 120px; 
-	left:-12px;
-	font-size: 1.25em; 
-	font-family: helvetica, arial, sans-serif; 
-	color:#888;
-	opacity:1; 
-	transition: opacity 2s;
-}
-.boutton2:after { 
-	content: "Stages";
-	position:relative; 
-	top: 35px; 
-	left: -45px; 
+	top: 35%; 
 	font-size: 1.25em; 
 	font-family: helvetica, arial, sans-serif; 
 	color:black;
-	opacity:0; 
-	transition: opacity 2s;
-
-}
-.boutton2:before { 
-	content: "Stages";
-	position:relative; 
-	top: 120px; 
-	left: 12px;
-	font-size: 1.25em; 
-	font-family: helvetica, arial, sans-serif; 
-	color:white;
 	opacity:1; 
 	transition: opacity 2s;
-
 }
-.boutton3:after  { 
+
+.boutton2:before  { 
 	content: "Stages";
 	position:relative; 
-	top: 120px; 
-	left: -45px;
+	top: 35%; 
 	font-size: 1.25em; 
 	font-family: helvetica, arial, sans-serif; 
-	color:white;
-	opacity:0; 
+	color:black;
+	opacity:1; 
 	transition: opacity 2s;
 }
+
 .boutton3:before  { 
-	content: "Stages";
+	content: "CV";
 	position:relative; 
-	top: 30px; 
-	left: 12px;
+	top: 35%;
 	font-size: 1.25em; 
 	font-family: helvetica, arial, sans-serif; 
 	color:black;
 	opacity:1; 
 	transition: opacity 2s;
 }
-.boutton:hover:after{
-	opacity: 1;
-	transition: opacity 1s 1s;
-}
 
- .boutton1:hover:before{
- 	opacity: 0;
-	transition: opacity 0.8s 0.8s;
- }
 
- .boutton2:hover:after{
- 	opacity: 1;
-	transition: opacity 0.8s 0.8s;
- }
-
-  .boutton2:hover:before{
- 	opacity: 0;
-	transition: opacity 0.8s 0.8s;
- }
-
-.boutton3:hover:after{
-	opacity: 1;
-	transition: opacity 1s 1s;
-} 
-
-.boutton3:hover:before{
-	opacity: 0;
-	transition: opacity 1s 1s;
-} 
 
 
 
@@ -427,4 +382,13 @@ margin-left: 4%;
       margin-left: 0%;
       width: 100%;
     }
+  }
+
+
+  @media all and (max-width: 1000px){
+#slide2 { 
+	background: url(images/fondbleu.jpeg) center 0 no-repeat fixed; background-size: cover; 
+	height: 1900px;
+}
+
   }

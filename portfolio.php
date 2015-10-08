@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="portfolio 2.css" />	
-	<title>test</title>      
+	<title>Guillaume Grellet</title>      
 	<SCRIPT LANGUAGE="JavaScript" 	SRC="js/test.js"></SCRIPT>
 
 </head>
