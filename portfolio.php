@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="portfolio 2.css" />	
+	<link rel="stylesheet" href="portfolio 2.css" />
+
 	<title>Guillaume Grellet</title>      
 	<SCRIPT LANGUAGE="JavaScript" 	SRC="js/test.js"></SCRIPT>
 
@@ -27,9 +28,10 @@
 
 	<!-- La slide 1 -->
 	<div id="slide1">
+		<div class="t"><img class="port"  src="images/image1.png" alt="Accueil"></div>
+
 		<div class="slide_inside">
 			<!-- Le logo -->
-			<h1 class="t"><img src="images/image1.png" alt="Accueil"></h1>
 			
 			<a class="boutton" href="#s1"></a>
 			

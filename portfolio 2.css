@@ -271,6 +271,7 @@ margin-left: 4%;
 .boutton{
 	width: 90px; height: 90px;
 	margin-left: 40%;
+margin-top: 0 auto;
 	display: block;
 	background: #fff;
 	border: 20px solid cyan;
@@ -368,6 +369,8 @@ margin-left: 4%;
 
 
  .t {
+ 	text-align: center;
+ 	margin-top: -10px;
     animation-duration: 3s;
     animation-name: slidein;
   }
@@ -385,10 +388,211 @@ margin-left: 4%;
   }
 
 
-  @media all and (max-width: 1000px){
-#slide2 { 
-	background: url(images/fondbleu.jpeg) center 0 no-repeat fixed; background-size: cover; 
-	height: 1900px;
+
+
+
+
+
+@media all and (max-width:480px) {
+
+  body {
+	margin: 0;
+	padding: 0;
+	color:#fff;
+	font: normal 90% "Trebuchet MS",Verdana,"Lucida Grande",Tahoma,Arial,Helvetica,Sans-Serif;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+
+
 }
 
+
+
+/* Slides contents */
+.slide_inside {
+	width: auto;
+	height: auto;
+	margin: 0px;
+	position: relative;
+	background-color: rgba(0, 0, 0, .6);
+	padding: 10px;
+
+}
+
+#slide1, #slide2, #slide4, #slide3  {
+	height: 0 auto;
+	padding-top: 100px;
+
+	-webkit-transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1);
+	-moz-transition: background-position 1.4s cubic-bezier(.49,.22,.52,1.35);
+	-ms-transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
+	-o-transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
+	transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
+}
+
+
+
+
+#nav a {
+	display: inline-block;
+	margin: 10px 0.8em;
+	color: #eee;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 0 0 5px #fff;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+
+#slide1 { 
+	background:url(images/window.jpeg) center 0 no-repeat fixed; background-size: cover; 
+}
+
+
+ .t {
+ 	text-align: center;
+ 	margin-top: 5%;
+
+
   }
+
+  
+  @keyframes slidein {
+    from {
+     
+    }
+    
+    to {
+    
+    }
+  }
+
+.port{
+
+	width: 170px;
+	height: auto;
+}
+
+
+
+
+
+.boutton{
+	width: 90px; height: 90px;
+	margin-top: 5%;
+	margin-left: 5%;
+	display: block;
+	background: #fff;
+	border: 5px solid cyan;
+	float: left;
+	border-radius: 30px;
+	transition: border-radius 0s, border-color 0s; /* transition when the mouse leave */
+}
+
+
+.boutton1 {
+	width: 90px; height: 90px;
+	margin-top: 5%;
+	margin-left: 20%;
+	background: #fff;
+	border: 5px solid red;
+	display: block;
+	float: left;
+	border-radius: 30px;
+	transition: border-radius 2s, border-color 3s; /* transition when the mouse leave */
+}
+.boutton2 {
+	width: 90px; height: 90px;
+    margin-top: 5%;
+	margin-left: 5%;
+	background: #fff;
+	display: block;
+	float: left;
+	border: 5px solid green;
+	border-radius: 30px;
+	transition: border-radius 2s, border-color 3s; /* transition when the mouse leave */
+}
+.boutton3 {
+	width: 90px; height: 90px;
+	margin-top: 5%;
+	margin-left: 20%;
+	background: #fff;
+	display: block;
+	float: left;
+	border: 5px solid blue;
+	border-radius: 30px;
+	transition: border-radius 2s, border-color 3s; /* transition when the mouse leave */
+}
+.boutton:hover, .boutton2:hover, .boutton3:hover{
+	border-color: cyan;
+	transform: rotate(0deg);
+	border-radius: 30px;
+	transition: all 0s; /* transition when the mouse over */
+}
+
+.boutton1:hover, .boutton2:hover, .boutton3:hover{
+	border-color: red;
+	transform: rotate(0deg);
+	border-radius: 30px;
+	transition: all 0s; /* transition when the mouse over */
+}
+
+
+
+
+/* sorry, i need to play */
+.boutton:before  { 
+	content: "A propos de moi";
+	position:relative; 
+	top: 25%; 
+	font-size: 1.25em; 
+	font-family: helvetica, arial, sans-serif; 
+	color:red;
+	opacity:1; 
+	transition: opacity 0s;
+}
+
+.boutton1:before  { 
+	content: "Compétences";
+	word-wrap: break-word;
+	position:relative; 
+	top: 35%; 
+	font-size: 1.25em; 
+	font-family: helvetica, arial, sans-serif; 
+	color:red;
+	opacity:1; 
+	transition: opacity 0s;
+}
+
+.boutton2:before  { 
+	content: "Stages";
+	position:relative; 
+	top: 35%; 
+	font-size: 1.25em; 
+	font-family: helvetica, arial, sans-serif; 
+	color:black;
+	opacity:1; 
+	transition: opacity 2s;
+}
+
+.boutton3:before  { 
+	content: "CV";
+	position:relative; 
+	top: 35%;
+	font-size: 1.25em; 
+	font-family: helvetica, arial, sans-serif; 
+	color:black;
+	opacity:1; 
+	transition: opacity 2s;
+}
+
+
+
+
+}
